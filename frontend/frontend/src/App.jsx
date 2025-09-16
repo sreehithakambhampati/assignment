@@ -8,7 +8,7 @@ function App() {
 
   // Add customer
   const addCustomer = async () => {
-    const res = await fetch("http://localhost:5000/customers", {
+    const res = await fetch("https://assignment-nsy3.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, spend }),

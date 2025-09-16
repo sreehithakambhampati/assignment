@@ -16,7 +16,7 @@ function Campaigns() {
 
   const saveCampaign = async () => {
     // Call backend to save campaign
-    await fetch("http://localhost:5000/campaigns", {
+    await fetch("https://assignment-nsy3.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ condition }),

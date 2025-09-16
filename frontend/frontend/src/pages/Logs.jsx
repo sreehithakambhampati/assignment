@@ -4,7 +4,7 @@ function Logs() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/communication-log")
+    fetch("https://assignment-nsy3.onrender.com")
       .then((res) => res.json())
       .then((data) => setLogs(data));
   }, []);
